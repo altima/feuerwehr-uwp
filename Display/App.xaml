@@ -1,0 +1,9 @@
+﻿<mvvm:PrismUnityApplication
+    x:Class="Display.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Display"
+    xmlns:mvvm="using:Prism.Unity.Windows"
+    RequestedTheme="Light">
+
+</mvvm:PrismUnityApplication>
