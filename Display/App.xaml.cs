@@ -31,11 +31,12 @@ namespace AlarmDisplay
         {
             Container.RegisterType<IDnssdService, DnssdService>();
             Container.RegisterType<IHttpdService, HttpdService>();
-            Container.RegisterType<IGpioService, GpioService>();
+            Container.RegisterInstance<IGpioService>(new GpioService(EventAggregator), new ContainerControlledLifetimeManager());
+            Container.RegisterType<IAlarmTimerService, AlarmTimerService>();
 
             return base.OnInitializeAsync(args);
         }
-        
+
         /// <summary>
         /// Override this method with logic that will be performed after the application is initialized. For example, navigating to the application's home page.
         /// Note: This is called whenever the app is launched normally (start menu, taskbar, etc.) but not when resuming.
@@ -46,6 +47,7 @@ namespace AlarmDisplay
         {
             Container.Resolve<IHttpdService>().Restart();
             Container.Resolve<IGpioService>().Init();
+            Container.Resolve<IAlarmTimerService>().Restart();
 
             NavigationService.Navigate("Main", null);
             Window.Current.Activate();
