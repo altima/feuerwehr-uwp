@@ -1,9 +1,9 @@
-﻿namespace Display.Views
+﻿namespace AlarmDisplay.Views
 {
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref="Display.Views.CommonPage" />
+    /// <seealso cref="AlarmDisplay.Views.CommonPage" />
     /// <seealso cref="Windows.UI.Xaml.Markup.IComponentConnector" />
     /// <seealso cref="Windows.UI.Xaml.Markup.IComponentConnector2" />
     public sealed partial class MainPage

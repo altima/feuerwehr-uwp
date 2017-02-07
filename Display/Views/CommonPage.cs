@@ -1,6 +1,6 @@
 ﻿using Prism.Windows.Mvvm;
 
-namespace Display.Views
+namespace AlarmDisplay.Views
 {
     /// <summary>
     /// 

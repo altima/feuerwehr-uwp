@@ -1,21 +1,21 @@
-﻿using Display.RestControllers;
+﻿using AlarmDisplay.RestControllers;
 using Prism.Events;
 using Restup.Webserver.Http;
 using Restup.Webserver.Rest;
 using System.Collections.Generic;
 
-namespace Display.Services
+namespace AlarmDisplay.Services
 {
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref="Display.Services.IService" />
+    /// <seealso cref="AlarmDisplay.Services.IService" />
     public interface IHttpdService : IService { }
 
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref="Display.Services.IHttpdService" />
+    /// <seealso cref="AlarmDisplay.Services.IHttpdService" />
     public class HttpdService : IHttpdService
     {
         IEventAggregator _eventAggregator;

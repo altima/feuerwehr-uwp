@@ -1,4 +1,4 @@
-﻿namespace Display
+﻿namespace AlarmDisplay
 {
     public class Constants
     {

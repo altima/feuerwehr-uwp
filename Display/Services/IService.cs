@@ -1,4 +1,4 @@
-﻿namespace Display.Services
+﻿namespace AlarmDisplay.Services
 {
     /// <summary>
     /// 

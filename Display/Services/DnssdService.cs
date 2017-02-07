@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Windows.Networking.ServiceDiscovery.Dnssd;
 using Windows.Networking.Sockets;
 
-namespace Display.Services
+namespace AlarmDisplay.Services
 {
     /// <summary>
     /// 
@@ -18,7 +18,7 @@ namespace Display.Services
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref="Display.Services.IDnssdService" />
+    /// <seealso cref="AlarmDisplay.Services.IDnssdService" />
     public class DnssdService : IDnssdService
     {
         /// <summary>

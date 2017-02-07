@@ -1,11 +1,11 @@
-﻿using Display.Events;
-using Display.Models;
+﻿using AlarmDisplay.Events;
+using AlarmDisplay.Models;
 using Prism.Events;
 using Restup.Webserver.Attributes;
 using Restup.Webserver.Models.Contracts;
 using Restup.Webserver.Models.Schemas;
 
-namespace Display.RestControllers
+namespace AlarmDisplay.RestControllers
 {
     /// <summary>
     /// 

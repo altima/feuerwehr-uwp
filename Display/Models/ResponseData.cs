@@ -1,4 +1,4 @@
-﻿namespace Display.Models
+﻿namespace AlarmDisplay.Models
 {
     /// <summary>
     /// 

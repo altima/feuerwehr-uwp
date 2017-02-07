@@ -1,6 +1,6 @@
 ﻿using Prism.Events;
 
-namespace Display.Events
+namespace AlarmDisplay.Events
 {
     /// <summary>
     /// 

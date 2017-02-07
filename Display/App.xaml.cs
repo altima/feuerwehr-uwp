@@ -1,11 +1,11 @@
-﻿using Display.Services;
+﻿using AlarmDisplay.Services;
 using Prism.Unity.Windows;
 using Microsoft.Practices.Unity;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 
-namespace Display
+namespace AlarmDisplay
 {
     /// <summary>
     /// 

@@ -1,9 +1,9 @@
-﻿namespace Display.ViewModels
+﻿namespace AlarmDisplay.ViewModels
 {
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref="Display.ViewModels.CommonPageViewModel" />
+    /// <seealso cref="AlarmDisplay.ViewModels.CommonPageViewModel" />
     public class MainPageViewModel : CommonPageViewModel
     {
         /// <summary>

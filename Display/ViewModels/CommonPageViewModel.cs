@@ -1,6 +1,6 @@
 ﻿using Prism.Windows.Mvvm;
 
-namespace Display.ViewModels
+namespace AlarmDisplay.ViewModels
 {
     /// <summary>
     /// 

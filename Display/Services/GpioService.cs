@@ -1,8 +1,8 @@
-﻿using Display.Events;
+﻿using AlarmDisplay.Events;
 using Prism.Events;
 using Windows.Devices.Gpio;
 
-namespace Display.Services
+namespace AlarmDisplay.Services
 {
     /// <summary>
     /// 
@@ -28,7 +28,7 @@ namespace Display.Services
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref="Display.Services.IGpioService" />
+    /// <seealso cref="AlarmDisplay.Services.IGpioService" />
     public class GpioService : IGpioService
     {
         private IEventAggregator _eventAggregator;
