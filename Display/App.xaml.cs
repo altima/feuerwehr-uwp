@@ -45,9 +45,9 @@ namespace AlarmDisplay
         /// <returns></returns>
         protected override Task OnLaunchApplicationAsync(LaunchActivatedEventArgs args)
         {
-            Container.Resolve<IHttpdService>().Restart();
-            Container.Resolve<IGpioService>().Init();
-            Container.Resolve<IAlarmTimerService>().Restart();
+            //Container.Resolve<IHttpdService>().Restart();
+            //Container.Resolve<IGpioService>().Init();
+            //Container.Resolve<IAlarmTimerService>().Restart();
 
             NavigationService.Navigate("Main", null);
             Window.Current.Activate();

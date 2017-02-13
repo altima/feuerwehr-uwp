@@ -4,6 +4,7 @@ using Prism.Events;
 using Restup.Webserver.Attributes;
 using Restup.Webserver.Models.Contracts;
 using Restup.Webserver.Models.Schemas;
+using Windows.UI.Core;
 
 namespace AlarmDisplay.RestControllers
 {
@@ -31,7 +32,8 @@ namespace AlarmDisplay.RestControllers
         [UriFormat("/on")]
         public IGetResponse On()
         {
-            _eventAggregator.GetEvent<AlarmEvents.On>().Publish();
+            Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
+                () => { _eventAggregator.GetEvent<AlarmEvents.On>().Publish(); });
             return new GetResponse(GetResponse.ResponseStatus.OK, new ResponseData(200, "ok"));
         }
 
@@ -42,7 +44,8 @@ namespace AlarmDisplay.RestControllers
         [UriFormat("/off")]
         public IGetResponse Off()
         {
-            _eventAggregator.GetEvent<AlarmEvents.Off>().Publish();
+            Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
+                () => { _eventAggregator.GetEvent<AlarmEvents.Off>().Publish(); });
             return new GetResponse(GetResponse.ResponseStatus.OK, new ResponseData(200, "ok"));
         }
     }

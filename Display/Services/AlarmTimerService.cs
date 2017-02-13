@@ -49,7 +49,11 @@ namespace AlarmDisplay.Services
             if (_timer == null)
             {
                 _timer = new DispatcherTimer();
+#if !DEBUG
                 _timer.Interval = TimeSpan.FromHours(1);
+#else
+                _timer.Interval = TimeSpan.FromMinutes(2);
+#endif
                 _timer.Tick += OnTick;
             }
         }
@@ -68,10 +72,13 @@ namespace AlarmDisplay.Services
         /// <summary>
         /// Called when [alarm].
         /// </summary>
-        private void OnAlarm()
+        private async void OnAlarm()
         {
-            if (_timer.IsEnabled) _timer.Stop();
-            _timer.Start();
+            //await Window.Current.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.High, ()=>
+            //{
+                if (_timer.IsEnabled) _timer.Stop();
+                _timer.Start();
+            //});            
         }
 
         /// <summary>
